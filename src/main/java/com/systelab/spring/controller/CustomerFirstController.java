@@ -12,7 +12,7 @@ import java.util.List;
 
 @RestController
 @CrossOrigin(origins = "*", allowedHeaders = "*", exposedHeaders = "Authorization", allowCredentials = "true")
-public class CustomerController {
+public class CustomerFirstController {
 
     private CustomerService customerService;
 
@@ -22,7 +22,7 @@ public class CustomerController {
     }
 
 
-    @GetMapping("/customers")
+    @GetMapping("/customers1")
     public ResponseEntity<List<Customer>> getAllCustomers() {
         return ResponseEntity.ok(customerService.getCustomers());
     }
